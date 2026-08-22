@@ -9,7 +9,8 @@ Follow [instructions for installing Caddy](https://caddyserver.com/docs/install)
 After Caddy, everything else installed under a Python virtual environment.
 
 For a production installation, you just need these commands.
-"""shell
+
+```shell
 mkdir ~/projects
 cd ~/projects
 git clone https://github.com/jeffclough/podcastinator.git
@@ -19,11 +20,13 @@ source .venv/bin/activate
 pip install \
     "fastapi[standard]" 
     uvicorn \
-    python-json-logger
-"""
+    python-json-logger \
+    .
+```
 
 If you're interested in updating the code, it's almost the same.
-"""shell
+
+```shell
 mkdir ~/projects
 cd ~/projects
 git clone https://github.com/jeffclough/podcastinator.git
@@ -35,6 +38,6 @@ pip install -e \
     uvicorn \
     python-json-logger \
     ".[dev]"
-"""
+```
 
 
